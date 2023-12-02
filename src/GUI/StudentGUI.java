@@ -1,6 +1,6 @@
 package GUI;
 
-import BUS.StudentBus;
+import BUS.StudentBUS;
 import DTO.Student;
 
 import javax.swing.*;
@@ -27,7 +27,7 @@ public class StudentGUI extends JFrame {
 
     private void addSampleData() {
         DefaultTableModel model = (DefaultTableModel) table.getModel();
-        ArrayList<Student> data=new StudentBus().listStudents();
+        ArrayList<Student> data=new StudentBUS().listStudents();
         for(int i=0;i<data.size();i++) {
             model.addRow(data.get(i).toObject());
         }

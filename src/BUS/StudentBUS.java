@@ -5,7 +5,7 @@ import DTO.Student;
 
 import java.util.ArrayList;
 
-public class StudentBus {
+public class StudentBUS {
     public ArrayList<Student> listStudents() {
         return new StudentDAO().listStudents();
     }
