@@ -20,4 +20,12 @@ public class StudentDAO {
         }
         return new ArrayList<Student>();
     }
+    public void addStudent(Student st) {
+        try {
+            new DBConn().updateDB("INSERT INTO student VALUES (null,'"+st.getName()+"')");
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

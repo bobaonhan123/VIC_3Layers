@@ -9,4 +9,7 @@ public class StudentBUS {
     public ArrayList<Student> listStudents() {
         return new StudentDAO().listStudents();
     }
+    public void addStudent(Student st) {
+        new StudentDAO().addStudent(st);
+    }
 }

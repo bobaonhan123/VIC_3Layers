@@ -9,6 +9,10 @@ public class Student {
         this.name = name;
     }
 
+    public Student(String name) {
+        this.name=name;
+    }
+
     public int getId() {
         return id;
     }

@@ -25,4 +25,8 @@ public class DBConn {
         return st.executeQuery(query);
     }
 
+    public int updateDB(String query) throws Exception {
+        Statement st=this.getCon().createStatement();
+        return st.executeUpdate(query);
+    }
 }
